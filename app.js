@@ -42,7 +42,7 @@ yargs.command({
 //Create a LIST command
 yargs.command({
     command: 'list',
-    describe: 'Lists out all the availiable notes',
+    describe: 'Lists out all of the availiable notes',
     handler() {
         notes.listNotes();
     }
