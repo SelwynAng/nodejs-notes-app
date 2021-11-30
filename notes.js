@@ -25,7 +25,7 @@ const removeNotes = (title) => {
     } else {
         const remainingNotes = notes.filter((note) => note.title !== title)
         if (remainingNotes.length === notes.length) {
-            console.log(chalk.yellow("Chosen title does not exist in database!"));
+            console.log(chalk.yellow("Chosen title doesn't exist in database!"));
         } else {
             saveNotes(remainingNotes);
             console.log(chalk.green("Note has been successfully removed!"));
