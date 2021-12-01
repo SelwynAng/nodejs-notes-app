@@ -14,7 +14,7 @@ const addNotes = (title, body) => {
         saveNotes(notes); //Converts array of objects back into JSON string saved into notes.json file
         console.log(chalk.green('New note added!'));
     } else {
-        console.log(chalk.yellow('Note title already taken. Choose another title!'));
+        console.log(chalk.yellow('Note title taken already. Choose another title!'));
     }
 }
 
